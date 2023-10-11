@@ -19,7 +19,7 @@ searchUrl <- "https://openapi.naver.com/v1/search/blog.xml"
 Client_ID <- "sQlurxaY1e0TST3ZbDF9"
 Client_Secret <- "2Z9Ze9BxjF"
 
-#뉴스 URL 작성(UTF-8로 암호화, API 요청할 URL 정의, 검색결과는 100로 요청)
+#뉴스 URL 작성(UTF-8로 암호화, API 요청할 URL 정의, 검색결과는 100으로 요청)
 query <- URLencode(iconv("무신사", to="UTF-8"))
 url <- paste(searchUrl, "?query=", query, "&display=100&start=1&sort=sim", sep="")
 
